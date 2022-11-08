@@ -18,14 +18,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="331" height="93"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zVG-LB-g9s">
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zVG-LB-g9s">
                         <rect key="frame" x="8" y="8" width="315" height="77"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="zmw-30-U6H">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="8tH-bY-cgX"/>
+                                    <constraint firstAttribute="height" constant="32" id="cn0-LG-kqW"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvq-EA-sku">
-                                <rect key="frame" x="0.0" y="0.0" width="279" height="50"/>
+                                <rect key="frame" x="36" y="0.0" width="243" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wj1-43-iIj">
-                                        <rect key="frame" x="8" y="8" width="263" height="34"/>
+                                        <rect key="frame" x="8" y="8" width="227" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -40,11 +47,11 @@
                                     <constraint firstItem="wj1-43-iIj" firstAttribute="top" secondItem="dvq-EA-sku" secondAttribute="top" constant="8" id="oBW-XH-umz"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="zmw-30-U6H">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-KQ-XR6">
                                 <rect key="frame" x="283" y="0.0" width="32" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="8tH-bY-cgX"/>
-                                    <constraint firstAttribute="height" constant="32" id="cn0-LG-kqW"/>
+                                    <constraint firstAttribute="height" constant="32" id="KJq-Qw-v5H"/>
+                                    <constraint firstAttribute="width" constant="32" id="iQW-6H-toD"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -59,15 +66,17 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="avatarImageView" destination="zmw-30-U6H" id="5b8-27-Ldh"/>
-                <outlet property="bodyTextLabel" destination="wj1-43-iIj" id="nHf-S1-4aE"/>
+                <outlet property="avatarImageView" destination="xs4-KQ-XR6" id="Fkz-JO-PER"/>
+                <outlet property="bodyTextLabel" destination="wj1-43-iIj" id="VRQ-fn-Ie1"/>
                 <outlet property="bubbleView" destination="dvq-EA-sku" id="LLt-J1-U62"/>
+                <outlet property="youAvatarImageView" destination="zmw-30-U6H" id="sNj-rG-2eB"/>
             </connections>
             <point key="canvasLocation" x="126.81159420289856" y="72.65625"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
